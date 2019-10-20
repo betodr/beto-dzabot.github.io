@@ -1,94 +1,66 @@
-body{
+.body{
     margin: 0;
     background: white;
-    font-family: "montserrat";
-    font-weight: 450;
+    font-family: "Montserrat";
+    font-weight: 400;
 }
+
 .container{
-    width: 100%;
-    height: 600px;
-    margin: auto;
+    width: 80%;
+    margin: 0 auto;
 }
-p{
-    color:#D16C08;
-    font-size: 40px;
-    padding: 10px 0;
-    padding-left: 50px
+
+header{
+    background: white;   
 }
-header {
-    background: white; 
-    height: 70px;  
-}
+
 header::after{
     content: '';
     display: table;
-    clear: both; 
+    clear: both;
 }
-nav{
-    float: right;
-  
 
+nav {
+    float: right;
 }
+
 nav ul{
-    margin: 10px;
-    padding-right: 90px ;
+    margin: 0;
+    padding: 0;
     list-style: none;
 }
+
 nav li{
     display: inline-block;
-    margin-left: 50px;
-    padding-top: 23px;
+    margin-left: 70px;
+    padding-top: 25px;
     position: relative;
-}    
+}
+
 nav a{
-    color: #D16C08;
+    color: blue;
     text-decoration: none;
     text-transform: uppercase;
-    font-size: 25px;
+    font-size: 22px;
 }
-nav a:hover{
+
+nav a :hover{
     color: black;
 }
-nav a::before{
+
+nav a ::before{
     content:'';
     display: block;
-    height: 3px;
-    background-color: #D16C08;
+    height: 5px;
+    background-color: pink;
+    
     position: absolute;
     top: 0;
     width: 0%;
     transition: all ease-in-out 250ms;
-}
-nav a:hover::before{
-    width: 100%
-}
-.grid-container {
-    display: grid;
-    width: 100%;
-    grid-template-columns: 75% 35%;
-    grid-gap: 0px;
-    background-color: black;
-    padding: 0px;
-  }
-  
-.grid-container > div {
-    background-color: black;
-    text-align: left;
-    padding: 0px 0;
-    font-size: 30px;
-  }
-.item1{
-    height: 601px;
-    color: white;
-    font-size: 43px;
-    font-family: "Montserrat";
-    font-weight: 400;
-}
-p{
-    color: white;
-    
-}
-.item2{
-    height: 601px;
 
 }
+nav a:hover::before {
+    width: 100%;
+}
+ 
