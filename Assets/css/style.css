@@ -2,15 +2,16 @@ body{
     margin: 0;
     background: white;
     font-family: "montserrat";
-    font-weight: 400;
+    font-weight: 450;
 }
 .container{
     width: 100%;
+    height: 600px;
     margin: auto;
 }
 p{
-    color:#DE7681;
-    font-size: 34px;
+    color:#D16C08;
+    font-size: 40px;
     padding: 10px 0;
     padding-left: 50px
 }
@@ -40,10 +41,10 @@ nav li{
     position: relative;
 }    
 nav a{
-    color: #DE7681;
+    color: #D16C08;
     text-decoration: none;
     text-transform: uppercase;
-    font-size: 22px;
+    font-size: 25px;
 }
 nav a:hover{
     color: black;
@@ -52,7 +53,7 @@ nav a::before{
     content:'';
     display: block;
     height: 3px;
-    background-color: #DE7681;
+    background-color: #D16C08;
     position: absolute;
     top: 0;
     width: 0%;
@@ -60,4 +61,34 @@ nav a::before{
 }
 nav a:hover::before{
     width: 100%
+}
+.grid-container {
+    display: grid;
+    width: 100%;
+    grid-template-columns: 75% 35%;
+    grid-gap: 0px;
+    background-color: black;
+    padding: 0px;
+  }
+  
+.grid-container > div {
+    background-color: black;
+    text-align: left;
+    padding: 0px 0;
+    font-size: 30px;
+  }
+.item1{
+    height: 601px;
+    color: white;
+    font-size: 43px;
+    font-family: "Montserrat";
+    font-weight: 400;
+}
+p{
+    color: white;
+    
+}
+.item2{
+    height: 601px;
+
 }
