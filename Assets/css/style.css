@@ -1,9 +1,11 @@
+/***navigation***/
+
 body{
     margin: 0;
     background: white;
     font-family: "montserrat";
     font-weight: 400;
-    font-weight: 450;
+
 }
 
 .container{
@@ -24,18 +26,21 @@ header::after{
 
 nav {
     float: right;
+    
 }
 
 nav ul{
-    margin: 0;
+    margin-top: 0;
+    margin-bottom: 15px;
+    margin-right: 75px;
     padding: 0;
-    list-style: none;
+    list-style: none; 
 }
 
 nav li{
     display: inline-block;
     margin-left: 70px;
-    padding-top: 25px;
+    padding-top: 15px;
     position: relative;
 }
    
@@ -50,7 +55,7 @@ nav a:hover{
     border-top: solid 5px #D16C08 ;
     color: black;
     width: 100%;
-    transition: all ease-in-out 300ms; 
+    transition: all ease-in-out 250ms; 
 }
 nav a ::before{
     content:'';
@@ -63,11 +68,12 @@ nav a ::before{
     width: 0%;
 }
 
+/*****gridContainer******/
 
 .grid-container {
     display: grid;
     width: 100%;
-    grid-template-columns: 949px 510px;
+    grid-template-columns: 949px 500px;
     grid-gap: 0px;
     background-color: black;
     padding: 0px;
@@ -85,7 +91,7 @@ nav a ::before{
     color: white;
     font-size: 43px;
     font-family: "Montserrat";
-    font-weight: 400;
+    font-weight: 0;
 }
 
 p{
@@ -97,8 +103,24 @@ p{
 
 }
 
-.item1 p, h3{
+.item1 p{
+    font-family: "montserrat";
     padding-left: 75px;
     padding-right: 200px;
-/* main text selector */
+    padding-bottom: 70px;
 }
+
+h3{
+    padding-left: 75px;
+    padding-right: 200px;
+    margin-bottom: 20px;
+    margin-top: 70px;
+}
+
+h4{
+    padding-left: 75px;
+    padding-right: 200px;
+    margin-top: 20px;
+}
+
+/*****footer*******/
